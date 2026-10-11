@@ -12,7 +12,7 @@
   "navigationDividerColorDark": "#000000",
   "backgroundColor": "#F1F5F9",
   "enableNotifications": true,
-  "startUrl": "/home",
+  "startUrl": "/",
   "iconUrl": "https://khawlani-mart.firebaseapp.com/assets/icons/icon-512x512.png",
   "maskableIconUrl": "https://khawlani-mart.firebaseapp.com/assets/icons/icon-maskable-512x512.png",
   "splashScreenFadeOutDuration": 300,
