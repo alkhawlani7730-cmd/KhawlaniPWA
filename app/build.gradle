@@ -23,7 +23,7 @@ plugins {
 def twaManifest = [
     applicationId: 'com.firebaseapp.khawlani_mart.twa',
     hostName: 'khawlani-mart.firebaseapp.com', // The domain being opened in the TWA.
-    launchUrl: '/home', // The start path for the TWA. Must be relative to the domain.
+    launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
     name: 'سوبر ماركت الخولاني | Khawlani Mart', // The application name.
     launcherName: 'مارت خولاني', // The name shown on the Android Launcher.
     themeColor: '#3B82F6', // The color used for the status bar.
@@ -51,14 +51,14 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 36
     namespace "com.firebaseapp.khawlani_mart.twa"
     defaultConfig {
         applicationId "com.firebaseapp.khawlani_mart.twa"
-        minSdkVersion 24
-        targetSdkVersion 34
-        versionCode 1
-        versionName "1"
+        minSdkVersion 21
+        targetSdkVersion 36
+        versionCode 2
+        versionName "2"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -212,12 +212,4 @@ dependencies {
     
         implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.7.4'
     
-}
-
-configurations.all {
-    resolutionStrategy {
-        force 'androidx.browser:browser:1.5.0'
-        force 'androidx.core:core-ktx:1.9.0'
-        force 'androidx.core:core:1.9.0'
-    }
 }
